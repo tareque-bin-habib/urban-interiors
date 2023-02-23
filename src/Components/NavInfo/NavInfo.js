@@ -6,10 +6,11 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { BsStopwatch } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
+import './NavInfo.css'
 
 const NavInfo = () => {
     return (
-        <div className='border-b-2 border-gray-200'>
+        <div className='border-b-2 border-gray-200 lg:block navInfo'>
             <div className='max-w-[1440px] mx-auto'>
                 <div className='flex justify-between h-8'>
                     <div className='flex items-center gap-10'>
