@@ -5,10 +5,10 @@ import './NavMenu.css'
 const NavMenu = () => {
 
     const menuItems = <>
-        <li className='font-bold'><Link>Home</Link></li>
-        <li className='font-bold'><Link>About</Link></li>
-        <li className='font-bold'><Link>Services</Link></li>
-        <li className='font-bold'><Link>Contact</Link></li>
+        <li className='font-bold'><Link to='/'>Home</Link></li>
+        <li className='font-bold'><Link to='/about'>About</Link></li>
+        <li className='font-bold'><Link to='/services'>Services</Link></li>
+        <li className='font-bold'><Link to='/contact'>Contact</Link></li>
 
     </>
 
@@ -22,7 +22,7 @@ const NavMenu = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             {menuItems}
-                            <li className='font-bold'><Link>Login</Link></li>
+                            <li className='font-bold'><Link to='/login'>Login</Link></li>
                         </ul>
                     </div>
                     <Link className="btn btn-ghost normal-case text-2xl font-bold text-pink-500">Urban Interior</Link>
@@ -35,7 +35,7 @@ const NavMenu = () => {
                     </ul>
                 </div>
                 <div className="navbar-end logedin">
-                    <Link><button className="btn btn-secondary bg-pink-500 font-bold text-black border-0">Login</button></Link>
+                    <Link to='/login'><button className="btn btn-secondary bg-pink-500 font-bold text-white border-0">Login</button></Link>
                 </div>
             </div>
         </div >
