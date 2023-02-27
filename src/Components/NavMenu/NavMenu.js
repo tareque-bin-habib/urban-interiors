@@ -35,7 +35,7 @@ const NavMenu = () => {
                     </ul>
                 </div>
                 <div className="navbar-end logedin">
-                    <Link to='/login'><button className="btn btn-secondary bg-pink-500 font-bold text-white border-0">Login</button></Link>
+                    <Link to='/login'><button className="btn bg-pink-500 font-bold text-white border-0">Login</button></Link>
                 </div>
             </div>
         </div >
