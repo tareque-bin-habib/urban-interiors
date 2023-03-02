@@ -11,7 +11,7 @@ const ProudServiceImage = () => {
     }, [])
 
     return (
-        <div>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 gap-10'>
             {
                 image.map(images => <ProudServiceImages key={images.id} images={images}></ProudServiceImages>)
             }

@@ -4,7 +4,7 @@ const ProudServiceImages = ({ images }) => {
     const { image } = images
     return (
         <div>
-            <img src={image} alt="" />
+            <img className='proud-image rounded-2xl	' src={image} alt="" />
         </div>
     );
 };

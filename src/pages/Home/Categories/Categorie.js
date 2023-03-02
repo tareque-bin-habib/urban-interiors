@@ -5,7 +5,7 @@ import './Categorie.css'
 const Categorie = ({ categorie }) => {
     const { title, intro } = categorie
     return (
-        <div className='categorie flex justify-center items-center lg:p-10 md:p-20 sm:p-20'>
+        <div className='categorie flex justify-center items-center lg:p-10 md:p-20 sm:p-20 rounded-lg'>
             <div className='text-center'>
                 <div className='flex justify-center py-5 text-4xl'>
                     <AiOutlineHome className='home-icon text-pink-500'></AiOutlineHome>
