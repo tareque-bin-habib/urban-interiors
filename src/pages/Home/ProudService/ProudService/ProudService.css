@@ -7,3 +7,17 @@
 .proud-image {
     height: 200px;
 }
+
+
+
+@media only screen and (max-width: 1130px) {
+    .proud-head {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .proud-btn {
+        display: none;
+    }
+}
