@@ -1,13 +1,13 @@
 .banner {
     background-image: url(../../../images/slide4.jpg);
-    height: 400px;
+    height: 500px;
     background-size: 100% 100%;
     background-attachment: fixed;
 
 }
 
 .banner-content {
-    height: 400px;
+    height: 500px;
     background-color: black;
     opacity: 0.7;
 }

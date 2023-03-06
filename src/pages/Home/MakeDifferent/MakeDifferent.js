@@ -29,7 +29,7 @@ const MakeDifferent = () => {
                         </div>
                     </div>
                     <div className='flex justify-center items-center' >
-                        <iframe width="700" height="350" src="https://www.youtube.com/embed/sssrfVJUdFk" title="Inside A Hidden Architect’s Own Family Home That Reveals A Gorgeous Haven" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe className='youTube' width="700" height="350" src="https://www.youtube.com/embed/sssrfVJUdFk" title="Inside A Hidden Architect’s Own Family Home That Reveals A Gorgeous Haven" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
