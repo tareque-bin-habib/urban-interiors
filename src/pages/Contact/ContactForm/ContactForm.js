@@ -28,7 +28,7 @@ const ContactForm = () => {
                     <textarea className="textarea textarea-bordered border-2 rounded-xl py-14 w-2/3" placeholder="Message"></textarea>
                 </div>
             </div>
-            <div className='flex justify-center pt-10'>
+            <div className='flex justify-center py-10'>
                 <Link to='/services'>
                     <button className="btn btn-secondary rounded-xl  bg-pink-500 font-bold text-white border-0 ">Submit now</button>
                 </Link>
