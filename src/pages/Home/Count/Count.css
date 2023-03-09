@@ -1,6 +1,14 @@
-@media only screen and (max-width: 639px) {
-    .count {
-        padding-top: 5%;
+@media only screen and (max-width: 1023px) {
+    .content {
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
+    .content {
+        text-align: center;
+        padding-top: 30px;
     }
 }
 
@@ -10,8 +18,12 @@
     }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 639px) {
+    .count {
+        padding-top: 5%;
+    }
+
     .content {
-        text-align: center;
+        font-size: 25px;
     }
 }

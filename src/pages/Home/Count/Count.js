@@ -5,23 +5,23 @@ import './Count.css'
 const Count = () => {
     return (
         <div className="max-w-[1440px] mx-auto 2xl:py-20 xl:py-20 lg:py-20 md:py-5 sm:py-5 count" data-aos="fade-down"  >
-            <div className='lg:flex md:flex-row gap-40'>
+            <div className='lg:flex md:flex-row xl:gap-40 lg:gap-20 count-gap'>
                 <div className='flex justify-center items-center md:pb-10 sm:pb-10' >
                     <img src="https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/s2.jpg" alt="" />
                 </div>
                 <div className='count'>
-                    <div className='grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1  gap-20'>
+                    <div className='grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1  xl:gap-20 lg:gap-10'>
                         <div className='content'>
-                            <h2 className='text-4xl font-bold counter'>125</h2>
-                            <h3 className='text-2xl text-gray-500'>Designers</h3>
+                            <h2 className='xl:text-4xl lg:text-2xl md:text-4xl sm:text-4xl font-bold counter'>125</h2>
+                            <h3 className='xl:text-2xl lg:text-sm md:text-2xl sm:text-2xl text-gray-500'>Designers</h3>
                         </div>
                         <div className='content'>
-                            <h2 className='text-4xl font-bold counter'>350+</h2>
-                            <h3 className='text-2xl text-gray-500'>Projects</h3>
+                            <h2 className='xl:text-4xl lg:text-2xl md:text-4xl sm:text-4xl font-bold counter'>350+</h2>
+                            <h3 className='xl:text-2xl lg:text-sm md:text-2xl sm:text-2xl text-gray-500'>Projects</h3>
                         </div>
                         <div className='content'>
-                            <h2 className='text-4xl font-bold counter'>1200+</h2>
-                            <h3 className='text-2xl text-gray-500'>Clients</h3>
+                            <h2 className='xl:text-4xl lg:text-2xl md:text-4xl sm:text-4xl font-bold counter'>1200+</h2>
+                            <h3 className='xl:text-2xl lg:text-sm md:text-2xl sm:text-2xl text-gray-500'>Clients</h3>
                         </div>
                     </div>
                     <div className='content'>

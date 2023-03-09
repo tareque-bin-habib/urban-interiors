@@ -1,0 +1,9 @@
+.footer-top {
+    background-color: #26243C;
+}
+
+@media only screen and (max-width: 767px) {
+    .news {
+        display: none;
+    }
+}
