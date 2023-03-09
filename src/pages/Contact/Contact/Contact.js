@@ -1,9 +1,10 @@
 import React from 'react';
+import ContactBanner from '../ContactBanner/ContactBanner';
 
 const Contact = () => {
     return (
         <div>
-            contact
+            <ContactBanner></ContactBanner>
         </div>
     );
 };
