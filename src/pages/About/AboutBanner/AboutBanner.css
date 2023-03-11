@@ -1,0 +1,13 @@
+.about-banner {
+    background-image: url(../../../images/slide4.jpg);
+    height: 400px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+}
+
+.about-banner-content {
+    height: 400px;
+    background-color: black;
+    opacity: 0.7;
+}

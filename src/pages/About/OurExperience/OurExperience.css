@@ -1,0 +1,9 @@
+@media only screen and (max-width: 767px) {
+    .ex-img {
+        width: 300px;
+    }
+
+    .single-part {
+        padding-bottom: 20px;
+    }
+}
