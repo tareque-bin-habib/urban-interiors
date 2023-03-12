@@ -3,6 +3,7 @@ import AboutBanner from '../AboutBanner/AboutBanner';
 import CompanyActivity from '../CompanyActivity/CompanyActivity';
 import Designer from '../Designer/Designer';
 import OurExperience from '../OurExperience/OurExperience';
+import OurTeam from '../OurTeam/OurTeam';
 
 const About = () => {
     return (
@@ -11,6 +12,7 @@ const About = () => {
             <OurExperience></OurExperience>
             <CompanyActivity></CompanyActivity>
             <Designer></Designer>
+            <OurTeam></OurTeam>
         </div>
     );
 };
