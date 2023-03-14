@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ContactForm = () => {
     return (
-        <div className='max-w-[1440px] mx-auto min-h-screen'>
+        <div className='max-w-[1440px] mx-auto min-h-screen' data-aos="fade-down">
             <div className=' pt-20'>
                 <h1 className='text-center text-5xl font-bold'>Let's get in touch</h1>
                 <p className='text-center text-xl py-5 text-gray-500'>Give us a call or drop by anytime, we endeavour to answer all enquiries <br /> within 24 hours on business days.</p>

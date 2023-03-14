@@ -7,7 +7,7 @@ import './Designer.css'
 const Designer = () => {
     return (
         <div className='max-w-[1440px] mx-auto py-20'>
-            <div className='grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-24 py-10'>
+            <div className='grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-24 py-10' data-aos="fade-down">
                 <div className='flex justify-center'>
                     <div>
                         <h3 className='text-gray-500 text-sm font-bold'>WHO WE ARE</h3>

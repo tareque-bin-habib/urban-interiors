@@ -5,8 +5,8 @@ import './ProudService.css'
 
 const ProudService = () => {
     return (
-        <div className="max-w-[1440px] mx-auto 2xl:py-20 xl:py-20 lg:py-20 md:py-5 sm:py-5" data-aos="fade-down"  >
-            <div className='lg:flex md:flex-row justify-around items-center '>
+        <div className="max-w-[1440px] mx-auto 2xl:py-20 xl:py-20 lg:py-20 md:py-5 sm:py-5" >
+            <div className='lg:flex md:flex-row justify-around items-center ' data-aos="fade-down">
                 <div className='flex justify-center items-center md:pb-10 sm:pb-10' >
                     <div>
                         <h1 className="font-bold pb-5 proud-head ">We are very proud of the <br />

@@ -1,0 +1,11 @@
+@media only screen and (max-width: 639px) {
+    .service {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 337px) {
+    .service {
+        width: 250px;
+    }
+}

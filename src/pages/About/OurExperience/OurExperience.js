@@ -5,7 +5,7 @@ import './OurExperience.css'
 
 const OurExperience = () => {
     return (
-        <div className='max-w-[1440px] mx-auto py-20'>
+        <div className='max-w-[1440px] mx-auto py-20 ' data-aos="fade-down">
             <div className='grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1'>
                 <div className='flex justify-center single-part'>
                     <div>
