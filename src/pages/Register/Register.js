@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
-import { BsGoogle } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Contaxts/AuthProvider';
 
 const Register = () => {
-
     const { register, formState: { errors }, handleSubmit } = useForm()
+    const { createUser } = useContext(AuthContext)
 
     const handleSignup = data => {
         console.log(data)
+        createUser(data.email, data.password)
+            .then(result => {
+                const user = result.user;
+                console.log(user)
+            })
+            .catch(error => console.error(error))
     }
 
     return (
