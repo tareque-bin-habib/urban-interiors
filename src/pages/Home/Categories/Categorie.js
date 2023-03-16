@@ -12,7 +12,7 @@ const Categorie = ({ categorie }) => {
                 </div>
                 <h1 className='text-2xl categorie-head font-bold hover:text-pink-500'>{title}</h1>
                 <p className='py-5 text-gray-500 font-bold'>{intro}</p>
-                <button className="btn bg-pink-500 text-white border-0">Read more</button>
+                <button className="btn bg-pink-500 text-white rounded-xl border-0">Read more</button>
 
             </div>
         </div>

@@ -1,48 +1,48 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import { BsGoogle } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 const Register = () => {
+
+    const { register, formState: { errors }, handleSubmit } = useForm()
+
+    const handleSignup = data => {
+        console.log(data)
+    }
+
     return (
-        <div className="hero min-h-screen">
-            <div className="hero-content flex-col lg:flex-row-reverse">
-                <div className="text-center lg:text-left">
-                    <h1 className="text-5xl font-bold">Please Register</h1>
-                    <p className="py-6">Urban interiors are the epitome of modernity and style, featuring industrial materials, smart technology, and sleek design elements</p>
-                </div>
-                <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-10 ">
-                    <div className="card-body">
-                        <form>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text font-bold">Full Name</span>
-                                </label>
-                                <input type="text" placeholder="Full Name" className="input input-bordered" />
-                            </div>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text font-bold">Email</span>
-                                </label>
-                                <input type="text" placeholder="email" className="input input-bordered" />
-                            </div>
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text font-bold">Password</span>
-                                </label>
-                                <input type="text" placeholder="password" className="input input-bordered" />
-                                <label className="label">
-                                    <Link to='/login'><p>Already have an account? <span className='text-pink-500'>Login</span></p></Link>
-                                </label>
-                            </div>
-                            <div className="form-control mt-6">
-                                <button className="btn bg-pink-500 border-0 text-white font-bold">Register</button>
-                            </div>
-                            <div className='pt-10 flex justify-center'>
-                                <BsGoogle className='text-2xl cursor-pointer'></BsGoogle>
-                            </div>
-                        </form>
+        <div className='h-[800px] flex justify-center items-center'>
+            <div className='w-96 p-7'>
+                <h2 className='text-2xl text-center font-bold'>Please Register</h2>
+                <form onSubmit={handleSubmit(handleSignup)}>
+                    <div className="form-control w-full max-w-xs">
+                        <label className="label">
+                            <span className="label-text">Name</span>
+                        </label>
+                        <input type="text" {...register("name", { required: "name is required" })} className="input input-bordered rounded-xl w-full max-w-xs" />
+                        {errors.name && <p className='text-red-500 pt-3'>{errors.name?.message}</p>}
                     </div>
-                </div>
+                    <div className="form-control w-full max-w-xs">
+                        <label className="label">
+                            <span className="label-text">Email</span>
+                        </label>
+                        <input type="email" {...register("email", { required: "Email is required" })} className="input input-bordered rounded-xl w-full max-w-xs" />
+                        {errors.email && <p className='text-red-500 pt-3'>{errors.email?.message}</p>}
+                    </div>
+                    <div className="form-control w-full max-w-xs pb-5">
+                        <label className="label">
+                            <span className="label-text">Passoword</span>
+                        </label>
+                        <input type="password" {...register("password", { required: "Password is required", minLength: { value: 6, message: "Password should be 6 character of longer" } })} className="input input-bordered rounded-xl w-full max-w-xs" />
+                        {errors.password && <p className='text-red-500 pt-3'>{errors.password?.message}</p>}
+
+                    </div>
+                    <input className='btn bg-pink-500 rounded-xl border-0 w-full text-white font-bold' value='Signup' type="submit" />
+                </form>
+                <p className='pt-4'>Already have an account? <Link className='text-pink-500' to='/login'>Please Login</Link></p>
+                <div className="divider">OR</div>
+                <button className='btn btn-outline w-full rounded-xl'>CONTINUE WITH GOOGLE</button>
             </div>
         </div>
     );
