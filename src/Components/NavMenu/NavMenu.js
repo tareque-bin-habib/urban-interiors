@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Contaxts/AuthProvider';
 import './NavMenu.css'
 
 const NavMenu = () => {
+    const { user, logOut } = useContext(AuthContext)
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.error(error))
+    }
 
     const menuItems = <>
         <li className='font-bold'><Link to='/'>Home</Link></li>
@@ -35,7 +43,28 @@ const NavMenu = () => {
                     </ul>
                 </div>
                 <div className="navbar-end logedin">
-                    <Link to='/login'><button className="btn bg-pink-500 font-bold rounded-xl text-white border-0">Login</button></Link>
+                    {
+                        user?.uid ?
+                            <Link onClick={handleLogOut}><button className="btn bg-pink-500 font-bold rounded-xl text-white border-0">Sign out</button></Link>
+                            :
+                            <Link to='/login'><button className="btn bg-pink-500 font-bold rounded-xl text-white border-0">Login</button></Link>
+                    }
+                    {
+                        user?.photoURL ?
+                            <Link title={user?.email}>
+                                <>
+                                    <div className="avatar online ml-5">
+                                        <div className="w-10 rounded-full">
+                                            <img src={user?.photoURL} alt='' />
+                                        </div>
+                                    </div>
+                                </>
+                            </Link>
+                            :
+                            <>
+                            </>
+
+                    }
                 </div>
             </div>
         </div >

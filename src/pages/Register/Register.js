@@ -1,25 +1,58 @@
-import React, { useContext } from 'react';
+import { GoogleAuthProvider } from 'firebase/auth';
+import React, { useContext, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contaxts/AuthProvider';
+import '../Login/Login.css'
 
 const Register = () => {
     const { register, formState: { errors }, handleSubmit } = useForm()
-    const { createUser } = useContext(AuthContext)
+    const { createUser, updateUser, createWithGmail } = useContext(AuthContext)
+    const [signupError, setSignUpError] = useState('')
+
+    const navigate = useNavigate()
+    const location = useLocation()
+
+    const from = location.state?.from?.pathname || '/'
 
     const handleSignup = data => {
         console.log(data)
+        setSignUpError('')
         createUser(data.email, data.password)
             .then(result => {
                 const user = result.user;
                 console.log(user)
+                toast('User Created Successfully')
+                navigate(from, { replace: true })
+                const userInfo = {
+                    displayName: data.name
+                }
+                updateUser(userInfo)
+                    .then(() => { })
+                    .catch(error => console.error(error))
+            })
+            .catch(error => {
+                console.error(error)
+                setSignUpError(error.message)
+            })
+    }
+
+    const handlegoogle = () => {
+        const provider = new GoogleAuthProvider()
+        createWithGmail(provider)
+            .then(result => {
+                const user = result.user;
+                console.log(user)
+                navigate(from, { replace: true })
             })
             .catch(error => console.error(error))
+
     }
 
     return (
         <div className='h-[800px] flex justify-center items-center'>
-            <div className='w-96 p-7'>
+            <div className='w-96 p-7 categorie'>
                 <h2 className='text-2xl text-center font-bold'>Please Register</h2>
                 <form onSubmit={handleSubmit(handleSignup)}>
                     <div className="form-control w-full max-w-xs">
@@ -45,10 +78,11 @@ const Register = () => {
 
                     </div>
                     <input className='btn bg-pink-500 rounded-xl border-0 w-full text-white font-bold' value='Signup' type="submit" />
+                    {signupError && <p className='text-red-500 py-3'>{signupError}</p>}
                 </form>
                 <p className='pt-4'>Already have an account? <Link className='text-pink-500' to='/login'>Please Login</Link></p>
                 <div className="divider">OR</div>
-                <button className='btn btn-outline w-full rounded-xl'>CONTINUE WITH GOOGLE</button>
+                <button onClick={handlegoogle} className='btn btn-outline w-full rounded-xl'>CONTINUE WITH GOOGLE</button>
             </div>
         </div>
     );
