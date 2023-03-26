@@ -1,24 +1,20 @@
 [
     {
-        "id": 1,
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/team2.jpg",
         "name": "Tareque Bin Habib",
         "designation": "Founder & CEO"
     },
     {
-        "id": 2,
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/team1.jpg",
         "name": "Gwen Johnson",
         "designation": "Regional Manager"
     },
     {
-        "id": 3,
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/team3.jpg",
         "name": "Dhony Abraham",
         "designation": "Managing Partner"
     },
     {
-        "id": 4,
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/team4.jpg",
         "name": "Marko Dugonji",
         "designation": "Cheif Executive"

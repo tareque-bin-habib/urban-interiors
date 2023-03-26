@@ -1,6 +1,6 @@
 [
     {
-        "id": 1,
+        "person": "Elizabate",
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/p1.jpg",
         "name": "White Bed room",
         "desc": "White room, peaceful, serene, minimalist, bright, pure, calming, tranquil, simple, pristine.",
@@ -8,7 +8,7 @@
         "price": 1200
     },
     {
-        "id": 2,
+        "person": "Fiona",
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/p2.jpg",
         "name": "Drawing Fittings",
         "desc": "Detailed fittings for safety, function, and aesthetic precision.",
@@ -16,7 +16,7 @@
         "price": 1500
     },
     {
-        "id": 3,
+        "person": "Zain Mac",
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/p3.jpg",
         "name": "Modern Home Decor",
         "desc": "Minimalism, technology, functionality, natural materials, sustainable, sleek, clean lines",
@@ -24,7 +24,7 @@
         "price": 1500
     },
     {
-        "id": 4,
+        "person": "Eric Sam",
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/p4.jpg",
         "name": "Velvet Sofa with interior",
         "desc": "Plush, luxurious, elegant centerpiece with warm, inviting color scheme.",
@@ -32,7 +32,7 @@
         "price": 1100
     },
     {
-        "id": 5,
+        "person": "Luc Ricardo",
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/p5.jpg",
         "name": "Home Office",
         "desc": "Functional, efficient workspace with adequate storage and proper lighting.",
@@ -40,7 +40,7 @@
         "price": 900
     },
     {
-        "id": 6,
+        "person": "Dominic",
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/p6.jpg",
         "name": "Wooden bedhead",
         "desc": "Comfortable, supportive, decorative element for bedroom design.",
@@ -48,7 +48,7 @@
         "price": 800
     },
     {
-        "id": 7,
+        "person": "Aliana Salmon",
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/p7.jpg",
         "name": "Ambient interior finishing",
         "desc": "Design elements creating mood and atmosphere in interior spaces",
@@ -56,7 +56,7 @@
         "price": 1600
     },
     {
-        "id": 8,
+        "person": "Adam Helen",
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/p8.jpg",
         "name": "White living room",
         "desc": "Clean, modern living space with neutral palette and versatile design.",
@@ -64,7 +64,7 @@
         "price": 1300
     },
     {
-        "id": 9,
+        "person": "Michel peier",
         "image": "https://demo.w3layouts.com/demos_new/template_demo/06-06-2020/home-interior-liberty-demo_Free/779565612/web/assets/images/p9.jpg",
         "name": "Modern Bedroom",
         "desc": "Clean lines, neutral colors, functional furniture, and stylish lighting.",
