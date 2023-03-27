@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import './SingleService.css'
 import { AiOutlineUser } from 'react-icons/ai';
 import { BiArrowBack } from 'react-icons/bi';
+import OrderModal from '../../../Components/OrderModal/OrderModal';
 
 const SingleService = () => {
     const service = useLoaderData()
     const { person, image, name, desc, mainDesc, price } = service
+    const [order, setOrder] = useState(null)
 
     return (
         <div>
@@ -30,15 +32,17 @@ const SingleService = () => {
                             <p className='font-bold text-2xl'><span>Price:</span> {price}$</p>
                         </div>
 
-                        <Link>
-                            <button className="btn btn-secondary rounded-xl  bg-pink-500 font-bold mt-5 text-white border-0 ">Order</button>
-                        </Link>
+                        <label htmlFor="order-modal" onClick={() => setOrder(service)} className="btn rounded-xl bg-pink-500 font-bold mt-5 text-white border-0 ">Please Order</label>
                     </div>
                     <div>
                         <img src={image} alt="" />
                     </div>
                 </div>
             </div>
+            {
+                order &&
+                <OrderModal order={order}></OrderModal>
+            }
         </div>
 
     );

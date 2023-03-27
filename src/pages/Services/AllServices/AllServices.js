@@ -17,6 +17,7 @@ const AllServices = () => {
                     services.map(service => <AllService service={service} key={service._id}></AllService>)
                 }
             </div>
+
         </div>
     );
 };
