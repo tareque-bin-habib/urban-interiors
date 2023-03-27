@@ -2,7 +2,6 @@ import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import './SingleService.css'
 import { AiOutlineUser } from 'react-icons/ai';
-import { ImPriceTags } from 'react-icons/im';
 import { BiArrowBack } from 'react-icons/bi';
 
 const SingleService = () => {
