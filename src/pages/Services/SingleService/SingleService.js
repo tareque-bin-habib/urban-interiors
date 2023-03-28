@@ -41,7 +41,7 @@ const SingleService = () => {
             </div>
             {
                 order &&
-                <OrderModal order={order}></OrderModal>
+                <OrderModal order={order} setOrder={setOrder}></OrderModal>
             }
         </div>
 

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../../Layout/Main";
 import About from "../../pages/About/About/About";
 import Contact from "../../pages/Contact/Contact/Contact";
+import Dashboard from "../../pages/Dashboard/DashBoard/Dashboard";
 import Home from "../../pages/Home/Home/Home";
 import Login from "../../pages/Login/Login";
 import Register from "../../pages/Register/Register";
@@ -42,6 +43,10 @@ export const router = createBrowserRouter([
                 path: '/services/:id',
                 element: <PrivateRoutes><SingleService></SingleService></PrivateRoutes>,
                 loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`)
+            },
+            {
+                path: '/dashboard',
+                element: <Dashboard></Dashboard>
             }
 
 

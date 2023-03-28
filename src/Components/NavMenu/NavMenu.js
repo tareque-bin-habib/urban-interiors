@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Contaxts/AuthProvider';
 import './NavMenu.css'
+import { RxDashboard } from 'react-icons/rx';
+
 
 const NavMenu = () => {
     const { user, logOut } = useContext(AuthContext)
@@ -30,7 +32,34 @@ const NavMenu = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                             {menuItems}
-                            <li className='font-bold'><Link to='/login'>Login</Link></li>
+                            <div className="navbar-end ham">
+                                {
+                                    user?.uid ?
+                                        <>
+                                            <Link to='/dashboard'><RxDashboard className='text-2xl mr-5' title='Dashboard'></RxDashboard></Link>
+                                            <Link onClick={handleLogOut}><button className="btn bg-pink-500 font-bold rounded-xl text-white border-0">Sign out</button></Link>
+                                        </>
+
+                                        :
+                                        <Link to='/login'><button className="btn bg-pink-500 font-bold rounded-xl text-white border-0">Login</button></Link>
+                                }
+                                {
+                                    user?.photoURL ?
+                                        <Link title={user?.email}>
+                                            <>
+                                                <div className="avatar online ml-5">
+                                                    <div className="w-10 rounded-full">
+                                                        <img src={user?.photoURL} alt='' />
+                                                    </div>
+                                                </div>
+                                            </>
+                                        </Link>
+                                        :
+                                        <>
+                                        </>
+
+                                }
+                            </div>
                         </ul>
                     </div>
                     <Link className="btn btn-ghost normal-case text-2xl font-bold text-pink-500">Urban Interior</Link>
@@ -45,7 +74,11 @@ const NavMenu = () => {
                 <div className="navbar-end logedin">
                     {
                         user?.uid ?
-                            <Link onClick={handleLogOut}><button className="btn bg-pink-500 font-bold rounded-xl text-white border-0">Sign out</button></Link>
+                            <>
+                                <Link to='/dashboard'><RxDashboard className='text-2xl mr-5' title='Dashboard'></RxDashboard></Link>
+                                <Link onClick={handleLogOut}><button className="btn bg-pink-500 font-bold rounded-xl text-white border-0">Sign out</button></Link>
+                            </>
+
                             :
                             <Link to='/login'><button className="btn bg-pink-500 font-bold rounded-xl text-white border-0">Login</button></Link>
                     }
