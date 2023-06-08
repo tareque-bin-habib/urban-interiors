@@ -52,7 +52,7 @@ const OrderModal = ({ order, setOrder }) => {
                         <span className="label-text font-bold">Mobile Number</span>
                         <input type="text" name='number' placeholder="phone number" className="input rounded-xl input-bordered w-full" />
                         <br />
-                        <input className='w-full btn rounded-xl bg-pink-400 border-0 text-white' type="submit" value="Submit" />
+                        <input className='w-full btn rounded-xl bg-teal-400 border-0 text-white' type="submit" value="Submit" />
 
                     </form>
                 </div>

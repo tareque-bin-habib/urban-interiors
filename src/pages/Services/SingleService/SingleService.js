@@ -14,7 +14,7 @@ const SingleService = () => {
         <div>
             <div className='single-service'>
                 <div className='flex justify-center items-center single-banner-content'>
-                    <Link to='/services'><BiArrowBack className='text-3xl text-white font-bold mr-5 pointer'></BiArrowBack></Link>
+                    <Link to='/services'><BiArrowBack className='text-3xl text-white font-bold mr-5 pointer text-teal-500'></BiArrowBack></Link>
                     <h1 className='text-4xl text-white text-center font-bold'>{name}</h1>
 
                 </div>
@@ -25,15 +25,15 @@ const SingleService = () => {
                         <div>
                             <h1 className='text-2xl font-bold'>{desc}</h1 >
                             <div className='pt-5 flex gap-4'>
-                                <AiOutlineUser className='text-2xl'></AiOutlineUser>
-                                <h1 className='font-bold'>{person}</h1>
+                                <AiOutlineUser className='text-2xl text-teal-500'></AiOutlineUser>
+                                <h1 className='font-bold text-teal-500'>{person}</h1>
                             </div>
                             <p className='pt-5'>{mainDesc}</p>
                             <div className='flex gap-4 pt-5'>
                                 <p className='font-bold text-2xl'><span>Price:</span> {price}$</p>
                             </div>
 
-                            <label htmlFor="order-modal" onClick={() => setOrder(service)} className="btn rounded-xl bg-pink-500 font-bold mt-5 text-white border-0 ">Please Order</label>
+                            <label htmlFor="order-modal" onClick={() => setOrder(service)} className="btn rounded-xl bg-teal-500 font-bold mt-5 text-white border-0 ">Please Order</label>
                         </div>
                     </div>
                     <div className='flex justify-center px-5'>

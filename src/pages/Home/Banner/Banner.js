@@ -17,7 +17,7 @@ const Banner = () => {
                                 <h1 className='text-5xl banner-head font-bold text-center text-white pb-10'>Good Design for Stylish Living<br /> Make your home Modern</h1>
                                 <div className='flex justify-center'>
                                     <Link to='/services'>
-                                        <button className="btn btn-secondary rounded-xl  bg-pink-500 font-bold text-white border-0 ">Our Services</button>
+                                        <button className="btn  rounded-xl z-10  bg-teal-500 font-bold text-white border-0 ">Our Services</button>
                                     </Link>
                                 </div>
                             </div>
@@ -36,7 +36,7 @@ const Banner = () => {
                                 <h1 className='text-5xl banner-head font-bold text-center text-white pb-10'>Browse style and get Inspired<br /> Home decoration Services</h1>
                                 <div className='flex justify-center'>
                                     <Link to='/services'>
-                                        <button className="btn btn-secondary rounded-xl  bg-pink-500 font-bold text-white border-0 ">Our Services</button>
+                                        <button className="btn  rounded-xl  bg-teal-500 font-bold text-white border-0 ">Our Services</button>
                                     </Link>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@ const Banner = () => {
                                 <h1 className='text-5xl banner-head font-bold text-center text-white pb-10'>Get your Personalized Interior &<br /> Home design services</h1>
                                 <div className='flex justify-center'>
                                     <Link to='/services'>
-                                        <button className="btn btn-secondary rounded-xl  bg-pink-500 font-bold text-white border-0 ">Our Services</button>
+                                        <button className="btn rounded-xl  bg-teal-500 font-bold text-white border-0 ">Our Services</button>
                                     </Link>
                                 </div>
                             </div>

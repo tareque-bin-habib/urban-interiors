@@ -26,7 +26,7 @@ const Count = () => {
                     </div>
                     <div className='content'>
                         <p className='text-gray-500 xl:text-xl lg:text-sm py-10'>Interior decorating is simply outfitting a space with items you like.<br />  For some, the aesthetic  of their home is so important to them</p>
-                        <Link to='/about'><button className="btn bg-pink-500 rounded-xl text-white border-0 proud-btn ">Read More</button></Link>
+                        <Link to='/about'><button className="btn bg-teal-500 rounded-xl text-white border-0 proud-btn ">Read More</button></Link>
 
                     </div>
                 </div>

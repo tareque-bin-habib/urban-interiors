@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './FooterTop.css'
+import { BsFillArrowUpSquareFill } from 'react-icons/bs';
 
 const FooterMain = () => {
     return (
@@ -41,7 +42,10 @@ const FooterMain = () => {
 
             </footer>
             <div>
-                <p className='text-center text-white text-xl pt-10'> © 2020 Home Interior. All rights reserved. Design by <span className='text-pink-500'>Urban Interior</span></p>
+                <p className='text-center text-white text-xl pt-10'> © 2020 Home Interior. All rights reserved. Design by <span className='text-teal-500'>Urban Interior</span></p>
+                {/* <div>
+                    <Link to='/'><BsFillArrowUpSquareFill className='bg-teal-500 text-4xl'></BsFillArrowUpSquareFill></Link>
+                </div> */}
             </div>
         </div>
     );

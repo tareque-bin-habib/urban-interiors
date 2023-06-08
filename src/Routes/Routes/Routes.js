@@ -9,6 +9,8 @@ import Register from "../../pages/Register/Register";
 import Services from "../../pages/Services/Services/Services";
 import SingleService from "../../pages/Services/SingleService/SingleService";
 import PrivateRoutes from "../PrivateRoute/PrivateRoutes";
+import Profile from "../../pages/Profile/Profile";
+import NotFound from "../../pages/NotFound/NotFound";
 
 export const router = createBrowserRouter([
     {
@@ -36,8 +38,16 @@ export const router = createBrowserRouter([
                 element: <Contact></Contact>
             },
             {
+                path: '/profile',
+                element: <Profile></Profile>
+            },
+            {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: '*',
+                element: <NotFound></NotFound>
             },
             {
                 path: '/services/:id',

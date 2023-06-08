@@ -13,7 +13,7 @@ const OurExperience = () => {
                         <h1 className='text-4xl font-bold pt-5'>We Have 10+ Years <br /> Of Experience.</h1>
                         <p className=' text-gray-500 font-semibold py-5'>Urban Interior provides the  best designable <br /> furniture and  home decor since 2010.  We <br /> provide updated furniture for  your <br /> home and decor  your home  interior.<br /> We always  work for our valueable <br /> customer as a first priority.</p>
                         <Link to='/services'>
-                            <button className="btn btn-secondary rounded-xl  bg-pink-500 font-bold text-white border-0 ">Read more</button>
+                            <button className="btn  rounded-xl  bg-teal-500 font-bold text-white border-0 ">Read more</button>
                         </Link>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ const OurExperience = () => {
                     <div>
                         <FaQuoteLeft className='text-gray-500 text-5xl'></FaQuoteLeft>
                         <p className='text-xl font-semibold pt-5 '><i>Moving into a new home can be one of life's great joys, but it can also be a time of uncertainty, especially when it comes to decorating.</i></p>
-                        <h1 className='text-4xl text-pink-500 font-bold pt-10 border-b-2 pb-5'>Urban Interior</h1>
+                        <h1 className='text-4xl text-teal-500 font-bold pt-10 border-b-2 pb-5'>Urban Interior</h1>
                         <p className='text-gray-500 font-bold text-xl pt-5'><i>The best interior solution.</i></p>
                     </div>
                 </div>

@@ -66,9 +66,9 @@ const Login = () => {
                             {loginError && <p className='text-red-500'>{loginError}</p>}
                         </div>
                     </div>
-                    <input className='btn bg-pink-500 rounded-xl border-0 w-full text-white font-bold' value='Login' type="submit" />
+                    <input className='btn bg-teal-500 rounded-xl border-0 w-full text-white font-bold' value='Login' type="submit" />
                 </form>
-                <p className='pt-4'>New to Urban Interior? <Link className='text-pink-500' to='/register'>Create new account</Link></p>
+                <p className='pt-4'>New to Urban Interior? <Link className='text-teal-500' to='/register'>Create new account</Link></p>
                 <div className="divider">OR</div>
                 <button onClick={handleGoogle} className='btn btn-outline w-full rounded-xl'>CONTINUE WITH GOOGLE</button>
             </div>

@@ -13,7 +13,7 @@ const ProudService = () => {
                             service we provide and stand <br />
                             by every product we carry</h1>
                         <p className='text-gray-500 xl:text-xl lg:text-sm pb-10 '>Interior decorating is simply outfitting a space with items you like.<br />  For some, the aesthetic  of their home is so important to them</p>
-                        <Link to='/services'><button className="btn bg-pink-500 rounded-xl text-white border-0 proud-btn">Our Services</button></Link>
+                        <Link to='/services'><button className="btn bg-teal-500 rounded-xl text-white border-0 proud-btn">Our Services</button></Link>
                     </div>
                 </div>
                 <div className='flex justify-center items-center' >

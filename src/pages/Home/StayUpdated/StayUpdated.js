@@ -11,7 +11,7 @@ const StayUpdated = () => {
                     <input type="text" placeholder="Type here" className="input input-bordered rounded-xl w-full max-w-xs textInput" />
                 </div>
                 <div>
-                    <button className="btn btn-secondary rounded-xl  bg-pink-500 font-bold text-white border-0 ">Subscribe</button>
+                    <button className="btn  rounded-xl  bg-teal-500 font-bold text-white border-0 ">Subscribe</button>
                 </div>
             </div>
         </div>

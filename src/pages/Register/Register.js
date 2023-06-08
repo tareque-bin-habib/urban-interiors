@@ -77,10 +77,10 @@ const Register = () => {
                         {errors.password && <p className='text-red-500 pt-3'>{errors.password?.message}</p>}
 
                     </div>
-                    <input className='btn bg-pink-500 rounded-xl border-0 w-full text-white font-bold' value='Signup' type="submit" />
+                    <input className='btn bg-teal-500 rounded-xl border-0 w-full text-white font-bold' value='Signup' type="submit" />
                     {signupError && <p className='text-red-500 py-3'>{signupError}</p>}
                 </form>
-                <p className='pt-4'>Already have an account? <Link className='text-pink-500' to='/login'>Please Login</Link></p>
+                <p className='pt-4'>Already have an account? <Link className='text-teal-500' to='/login'>Please Login</Link></p>
                 <div className="divider">OR</div>
                 <button onClick={handlegoogle} className='btn btn-outline w-full rounded-xl'>CONTINUE WITH GOOGLE</button>
             </div>

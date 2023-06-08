@@ -17,7 +17,7 @@ const AllService = ({ service }) => {
                             <p className=' text-gray-500'>{desc}</p>
                         </div>
                         <div>
-                            <Link to={`/services/${_id}`}> <AiOutlineArrowRight className='text-2xl font-bold text-pink-500 cursor-pointer'><SingleService></SingleService></AiOutlineArrowRight></Link>
+                            <Link to={`/services/${_id}`}> <AiOutlineArrowRight className='text-2xl font-bold text-teal-500 cursor-pointer'><SingleService></SingleService></AiOutlineArrowRight></Link>
                         </div>
                     </div>
                 </div>

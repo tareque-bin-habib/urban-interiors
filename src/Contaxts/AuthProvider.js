@@ -8,6 +8,7 @@ const auth = getAuth(app)
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
     const createUser = (email, password) => {
         setLoading(true)
@@ -43,6 +44,13 @@ const AuthProvider = ({ children }) => {
         return signInWithPopup(auth, provider)
     }
 
+    const toggleDarkMode = () => {
+        setIsDarkMode(!isDarkMode);
+
+    };
+
+
+
 
     const authInfo = {
         createUser,
@@ -50,6 +58,8 @@ const AuthProvider = ({ children }) => {
         updateUser,
         createWithGmail,
         logOut,
+        toggleDarkMode,
+        isDarkMode,
         user,
         loading
     }

@@ -15,22 +15,22 @@ const NavInfo = () => {
                 <div className='flex justify-between h-8'>
                     <div className='flex items-center gap-10'>
                         <div className='border-l-2 border-gray-200 pl-5'>
-                            <FaFacebookF className='text-gray-500'></FaFacebookF>
+                            <FaFacebookF className='text-teal-500'></FaFacebookF>
                         </div>
                         <div className='border-l-2 border-gray-200 pl-5'>
-                            <AiOutlineTwitter className='text-gray-500'></AiOutlineTwitter>
+                            <AiOutlineTwitter className='text-teal-500'></AiOutlineTwitter>
                         </div>
                         <div className='border-l-2 border-gray-200 pl-5'>
-                            <BsInstagram className='text-gray-500'></BsInstagram>
+                            <BsInstagram className='text-teal-500'></BsInstagram>
                         </div>
                         <div className='border-l-2 border-gray-200 pl-5'>
-                            <AiFillLinkedin className='text-gray-500'></AiFillLinkedin>
+                            <AiFillLinkedin className='text-teal-500'></AiFillLinkedin>
                         </div>
                     </div>
                     <div className='flex items-center justify-around gap-10'>
                         <div className='flex justify-around items-center gap-2 border-r-2 border-gray-200 pr-5'>
                             <div>
-                                <BsFillTelephoneFill className='text-gray-500 text-sm'></BsFillTelephoneFill>
+                                <BsFillTelephoneFill className='text-teal-500 text-sm'></BsFillTelephoneFill>
                             </div>
                             <div>
                                 <p className='text-gray-500 text-sm	'>+142 4523678</p>
@@ -38,7 +38,7 @@ const NavInfo = () => {
                         </div>
                         <div className='flex justify-around items-center gap-2 border-r-2 border-gray-200 pr-5'>
                             <div>
-                                <BsStopwatch className='text-gray-500 text-sm' ></BsStopwatch>
+                                <BsStopwatch className='text-teal-500 text-sm' ></BsStopwatch>
                             </div>
                             <div>
                                 <p className='text-gray-500 text-sm	'>Mon - Fri: 10:00 - 18:00 </p>
@@ -46,7 +46,7 @@ const NavInfo = () => {
                         </div>
                         <div className='flex justify-around items-center gap-2 border-r-2 border-gray-200 pr-5'>
                             <div>
-                                <AiOutlineMail className='text-gray-500 text-sm	'></AiOutlineMail>
+                                <AiOutlineMail className='text-teal-500 text-sm	'></AiOutlineMail>
                             </div>
                             <div>
                                 <p className='text-gray-500 text-sm	'>info@gmail.com</p>

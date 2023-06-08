@@ -8,28 +8,28 @@ const CompanyActivity = () => {
                 <div className='activity'>
                     <div className='text-center'>
                         <h3 className='text-2xl font-bold pb-5'>Founded In 2010</h3>
-                        <h1 className='text-pink-500 text-5xl font-bold pb-5'>2010</h1>
+                        <h1 className='text-teal-500 text-5xl font-bold pb-5'>2010</h1>
                         <h3 className='font-bold text-gray-500'>YEAR WE FOUNDED</h3>
                     </div>
                 </div>
                 <div className='activity'>
                     <div className='text-center'>
                         <h3 className='text-2xl font-bold pb-5'>Proudly Received</h3>
-                        <h1 className='text-pink-500 text-5xl font-bold pb-5'>120</h1>
+                        <h1 className='text-teal-500 text-5xl font-bold pb-5'>120</h1>
                         <h3 className='font-bold text-gray-500'>NO: OF AWARDS</h3>
                     </div>
                 </div>
                 <div className='activity'>
                     <div className='text-center'>
                         <h3 className='text-2xl font-bold pb-5'>Number Of Clients</h3>
-                        <h1 className='text-pink-500 text-5xl font-bold pb-5'>1500</h1>
+                        <h1 className='text-teal-500 text-5xl font-bold pb-5'>1500</h1>
                         <h3 className='font-bold text-gray-500'>DAILY CLIENTS</h3>
                     </div>
                 </div>
                 <div className='activity'>
                     <div className='text-center'>
                         <h3 className='text-2xl font-bold pb-5'>Work Completed</h3>
-                        <h1 className='text-pink-500 text-5xl font-bold pb-5'>1500</h1>
+                        <h1 className='text-teal-500 text-5xl font-bold pb-5'>1500</h1>
                         <h3 className='font-bold text-gray-500'>PROJECTS DONE</h3>
                     </div>
                 </div>

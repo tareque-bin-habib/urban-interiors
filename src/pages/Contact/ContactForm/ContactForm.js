@@ -30,7 +30,7 @@ const ContactForm = () => {
             </div>
             <div className='flex justify-center py-10'>
                 <Link to='/services'>
-                    <button className="btn btn-secondary rounded-xl  bg-pink-500 font-bold text-white border-0 ">Submit now</button>
+                    <button className="btn rounded-xl  bg-teal-500 font-bold text-white border-0 ">Submit now</button>
                 </Link>
             </div>
         </div>
